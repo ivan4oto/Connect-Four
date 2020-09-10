@@ -1,0 +1,28 @@
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.headers {
+    text-align: center;
+}
+
+.dots {
+    margin: auto;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.row0 {
+    border: 3px solid blue;
+}
