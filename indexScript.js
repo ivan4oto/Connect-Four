@@ -1,3 +1,12 @@
+function addRedirect(){
+    var button = $('#init-btn')
+    button.on('click', function() {
+        myfunc();
+        window.location.href = "./game.html"
+    })
+}
+
+
 function myfunc(){
 
     var i = document.getElementById('username1').value;
@@ -7,6 +16,5 @@ function myfunc(){
     return false;
 }
 
-
-
+addRedirect()
 
