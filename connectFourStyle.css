@@ -26,3 +26,41 @@
 .row0 {
     border: 3px solid blue;
 }
+
+.rows {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.font1   {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+    color: steelblue;
+}
+
+.font2 {
+    font-family: 'Grandstander', cursive;
+}
+
+#player1{
+    text-align: center;
+    color: darkblue;
+}
+
+#player2{
+    color: crimson;
+}
+
+
+.btn-lg{
+    background-color: steelblue;
+}
+
+.container{
+    padding-top: 50px;
+}
+
+.my-form{
+    margin-top: 50px;
+}

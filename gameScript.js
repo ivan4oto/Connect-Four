@@ -1,5 +1,5 @@
-var player1 = prompt('Player One: enter your name, you will be Blue.')
-var player2 = prompt('Player Two: enter your name, you will be Red.')
+var player1 = localStorage.getItem('user1');
+var player2 = localStorage.getItem('user2');
 
 var playersTurn = 'blue'
 
@@ -58,7 +58,6 @@ function findFoursVertically(){
                 reds += 1
                 blues = 0
             }
-            console.log(blues, reds)
             if (blues >= 4){
                 alert(player1 + " you're the winner!")
             } else if (reds >= 4){
@@ -88,7 +87,6 @@ function findFoursHorizontally(){
                 blues = 0
             }
 
-            console.log(blues, reds)
             if (blues >= 4){
                 alert('Blue wins!')
             } else if (reds >= 4){

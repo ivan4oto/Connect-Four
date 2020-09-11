@@ -9,73 +9,33 @@
   crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="connectFourStyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="headers">
-                <h1>Welcome to Connect Four!</h1>
-                <h3">The object of this game is to connect four of your chips in a row!</h3>
-                <h4 id="turns"></h4>
-            </div>
-
-            <div class="rows">
-                <p>
-                    <span id=0 class="dot col0 row0"></span>
-                    <span id=1 class="dot col1 row0"></span>
-                    <span id=2 class="dot col2 row0"></span>
-                    <span id=3 class="dot col3 row0"></span>
-                    <span id=4 class="dot col4 row0"></span>
-                    <span id=5 class="dot col5 row0"></span>
-                    <span id=6 class="dot col6 row0"></span>
-                </p>
-                <p>
-                    <span class="dot col0 row1"></span>
-                    <span class="dot col1 row1"></span>
-                    <span class="dot col2 row1"></span>
-                    <span class="dot col3 row1"></span>
-                    <span class="dot col4 row1"></span>
-                    <span class="dot col5 row1"></span>
-                    <span class="dot col6 row1"></span>
-                </p>
-                <p>
-                    <span class="dot col0 row2"></span>
-                    <span class="dot col1 row2"></span>
-                    <span class="dot col2 row2"></span>
-                    <span class="dot col3 row2"></span>
-                    <span class="dot col4 row2"></span>
-                    <span class="dot col5 row2"></span>
-                    <span class="dot col6 row2"></span>
-                </p>
-                <p>
-                    <span class="dot col0 row3"></span>
-                    <span class="dot col1 row3"></span>
-                    <span class="dot col2 row3"></span>
-                    <span class="dot col3 row3"></span>
-                    <span class="dot col4 row3"></span>
-                    <span class="dot col5 row3"></span>
-                    <span class="dot col6 row3"></span>
-                </p>
-                <p>
-                    <span class="dot col0 row4"></span>
-                    <span class="dot col1 row4"></span>
-                    <span class="dot col2 row4"></span>
-                    <span class="dot col3 row4"></span>
-                    <span class="dot col4 row4"></span>
-                    <span class="dot col5 row4"></span>
-                    <span class="dot col6 row4"></span>
-                </p>
-                <p>
-                    <span class="dot col0 row5"></span>
-                    <span class="dot col1 row5"></span>
-                    <span class="dot col2 row5"></span>
-                    <span class="dot col3 row5"></span>
-                    <span class="dot col4 row5"></span>
-                    <span class="dot col5 row5"></span>
-                    <span class="dot col6 row5"></span>
-                </p>
-            </div>
-
+        <div class='container'>                
+                <h3 class='font1'>WELCOME TO</h3>
+                <h1 class='font1'>Connect Fours</h1>
+    
+                <form method="POST" class='my-form' action='game.html'>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-center">
+                            <label id='player1' class='font2' for="exampleInputEmail1">Player 1</label>
+                        </div>
+                        <input type="text" class="form-control" id='username1' aria-describedby="emailHelp" placeholder="Enter your nickname.">
+                    </div>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-center">
+                            <label id='player2' class='font2' for="exampleInputPassword1">Player 2</label>
+                        </div>
+                      <input type="text" class="form-control" id="username2" placeholder="Enter your nickname.">
+                     </div>
+                    <button id="init-btn"type="submit" class="btn btn-primary btn-lg btn-block" onclick='myfunc();'>Start</button>
+                  </form>
+                  <p></p>
+                  <p class='font2'>Rules:<br>The rules of this game are simple.<br> You're goal is to connect 4 circles of your colour. You can connect them horizontally or vertically.<br>
+                    First to connect four circles of his colour wins.</p>         
         </div>
-        <script src="connectFourScript.js"></script>
+        <script src="indexScript.js"></script>
     </body>
 </html>
